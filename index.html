@@ -2,12 +2,24 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
-<video loop id="myVideo" autoplay muted src="videos/airplanenyooom.mp4"></video>
+<!--TODO 1: background video change into image on smaller devices-->
+<!--TODO 2 : all text readable ono smaller devices (resize on phone to 24px approx)-->
+<!--TODO 3 : Layout change on smaller devices-->
+<!--    TODO 3.1: adjust article on smaller screen; image resize to stack ontop of text-->
+<!--    TODO 3.2: navbar collapse into hamburger menu-->
+<!--    TODO 3.3: change cruises-->
 
+
+
+<!--TODO 4: adjust header  center vertically and adjust padding around logo-->
+<!--TODO 5: change desktop p font size to 16px-->
+<!--TODO 6: change contact us format to form-->
+<!--TODO 7: change cruises format-->
 
 <nav>
     <a href ="index.html">
@@ -29,6 +41,9 @@
         <a href="contactUs.html">Contact Us</a>
     </div>
 </nav>
+
+
+
 <body>
 <section>
     <article>
@@ -47,8 +62,16 @@
     </article>
 </section>
 
+<video loop id="myVideo" autoplay muted src="videos/airplanenyooom.mp4"></video>
 
-
-<?php include "footer.html" ?>
 </body>
+<footer>
+    <div style="padding: 10px; text-decoration: none;">
+        <a href="index.html" >Home</a><br>
+        <a href="#" >Package Tours</a><br>
+        <a href="rediscoverSG.html" >Rediscover Singapore</a><br>
+        <a href="cruises.html" >Cruises</a><br>
+        <a href="contactUs.html" >Contact Us</a>
+    </div>
+</footer>
 </html>

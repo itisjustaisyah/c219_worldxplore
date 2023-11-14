@@ -190,3 +190,7 @@ section {
     transform: scale(110%);
 }
 
+@media (min-width: 768px) {
+    
+}
+
