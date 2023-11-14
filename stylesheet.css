@@ -1,5 +1,5 @@
 * {
-    font-size: 21px;
+    font-size: 18px;
 }
 .logo {
     width: 100px;
@@ -156,6 +156,7 @@ section {
 }
 
 #myVideo {
+    display: inline;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 100), rgba(0, 0, 0, 0));
     position: absolute;
     top: 0;
@@ -164,6 +165,10 @@ section {
     object-fit: fill;
     height: 100%;
     width: 100%
+}
+#myImage {
+    display:none;
+
 }
 
 .cruise-container {
@@ -190,7 +195,44 @@ section {
     transform: scale(110%);
 }
 
-@media (min-width: 768px) {
-    
+@media only screen and (max-width: 700px) {
+    *{
+        font-size: 21px
+    }
+
+    #myImage {
+        display: inline;
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 100), rgba(0, 0, 0, 0));
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        object-fit: fill;
+        height: 100%;
+        width: 100%
+    }
+    #myVideo{
+        display: none;
+    }
+
+    article > div > img {
+        padding: 5%;
+        display: flex;
+        max-height: none;
+        object-fit: contain;
+        max-width: 100%;
+        filter: grayscale(100%);
+
+        transition: all 0.2s ease-in-out;
+    }
+
+    article > div.zig{
+        display: flex;
+        flex-direction: column;
+    }
+    article > div.zag{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
