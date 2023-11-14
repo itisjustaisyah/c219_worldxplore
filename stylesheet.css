@@ -202,9 +202,13 @@ section {
     *{
         font-size: 21px
     }
-    .hamburger{
+    .hamburger {
         float: right;
-        display: block;
+        display: flex;
+    }
+
+    .navbar a:not(.hamburger){
+        display:none;
     }
 
     #myImage {
