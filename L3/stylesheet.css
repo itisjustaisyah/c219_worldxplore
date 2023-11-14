@@ -1,0 +1,192 @@
+* {
+    font-size: 21px;
+}
+.logo {
+    width: 100px;
+    float: left;
+    transform-origin: center;
+    transition: transform 100ms ease-out;
+    margin: 15px;
+
+}
+.logo:hover{
+    transform-origin: center;
+    transform: scale(120%);
+}
+nav{
+    z-index: 2;
+    background: skyblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+}
+.navbar a {
+    margin-top:auto;
+    margin-bottom:auto;
+    display: flex;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 100ms ease-out, color 100ms ease-out;
+}
+.navbar a:hover {
+    background-color: #45aade;
+    color: white;
+}
+.navbar a.current {
+
+}
+.navbar a.current:hover{
+    background-color: #eb1b2f;
+
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #45aade;
+    min-width: 131px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #86cce9;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+header{
+    justify-items: center;
+    padding: 3%
+}
+header > * {
+    text-align: center;
+    text-justify: inter-word;
+}
+header > h1 {
+    font-size: 100px;
+
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+article{
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(5px);
+    margin: 5%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article > div.zig{
+    display: flex;
+    flex-direction: row;
+}
+
+article > div.zag{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+article > div > img {
+    padding: 5%;
+    display: flex;
+    max-height: 50%;
+    max-width: 50%;
+    object-fit: cover;
+    filter: grayscale(100%);
+
+    transition: all 0.2s ease-in-out;
+}
+
+article > div > img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+
+
+}
+article > div> p {
+    display: flex;
+    padding: 14px;
+}
+section {
+    display:flex;
+    flex-direction: column;
+    gap:14px;
+    padding:14px;
+    min-height:100%
+}
+
+#myVideo {
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 100), rgba(0, 0, 0, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: fill;
+    height: 100%;
+    width: 100%
+}
+
+.cruise-container {
+    padding: 5%;
+    align-items: center;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.cruise-container-column {
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(5px);
+    min-height: 1000px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin: 1%;
+    transition: transform 0.2s ease-out;
+}
+.cruise-container-column:hover{
+    transform: scale(110%);
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<!--animate logo on hover //-->
+<!--style to navigation indicate current page and hover effects-->
+<!--dropdown menu for package tours containing three menu items-->
+<!--zoom, blur grascale or flip for articel images on hovert-->
+<!--add two more pages-->
+
+
+
+
+<video loop id="myVideo" autoplay muted src="videos/airplanenyooom.mp4"></video>
+
+
+<nav>
+    <a href ="index.html">
+        <img src = "images/logoWX.svg" class="logo" alt="My Happy SVG"/>
+    </a>
+    <?php
+    function checkCurrentPage($checkingPage): void
+    {
+        $currentPage =  basename($_SERVER['PHP_SELF']);
+        if ($checkingPage == $currentPage) {
+            echo 'class="current"';
+        }
+    }
+    ?>
+    <div class="navbar">
+        <div class="dropdown">
+            <a href="#" >Package Tours</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+
+        <a href="rediscoverSG.html" <?php checkCurrentPage('rediscoverSG.html');?>>Rediscover Singapore</a>
+        <a href="cruises.html" <?php checkCurrentPage('cruises.html');?>>Cruises</a>
+        <a href="contactUs.html" <?php checkCurrentPage('contactUs.html');?>>Contact Us</a>
+    </div>
+</nav>
+
+
+
+</body>
+</html>
