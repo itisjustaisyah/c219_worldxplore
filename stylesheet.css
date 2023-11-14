@@ -1,6 +1,9 @@
 * {
     font-size: 18px;
 }
+.hamburger {
+    display: none;
+}
 .logo {
     width: 100px;
     float: left;
@@ -198,6 +201,10 @@ section {
 @media only screen and (max-width: 700px) {
     *{
         font-size: 21px
+    }
+    .hamburger{
+        float: right;
+        display: block;
     }
 
     #myImage {
