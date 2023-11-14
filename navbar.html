@@ -23,15 +23,7 @@
     <a href ="index.html">
         <img src = "images/logoWX.svg" class="logo" alt="My Happy SVG"/>
     </a>
-    <?php
-    function checkCurrentPage($checkingPage): void
-    {
-        $currentPage =  basename($_SERVER['PHP_SELF']);
-        if ($checkingPage == $currentPage) {
-            echo 'class="current"';
-        }
-    }
-    ?>
+
     <div class="navbar">
         <div class="dropdown">
             <a href="#" >Package Tours</a>
@@ -42,12 +34,20 @@
             </div>
         </div>
 
-        <a href="rediscoverSG.html" <?php checkCurrentPage('rediscoverSG.html');?>>Rediscover Singapore</a>
-        <a href="cruises.html" <?php checkCurrentPage('cruises.html');?>>Cruises</a>
-        <a href="contactUs.html" <?php checkCurrentPage('contactUs.html');?>>Contact Us</a>
+        <a href="rediscoverSG.html" >Rediscover Singapore</a>
+        <a href="cruises.html" >Cruises</a>
+        <a href="contactUs.html">>Contact Us</a>
     </div>
 </nav>
-
+<!--    <?php
+    function checkCurrentPage($checkingPage): void
+    {
+        $currentPage =  basename($_SERVER['PHP_SELF']);
+        if ($checkingPage == $currentPage) {
+            echo 'class="current"';
+        }
+    }
+    ?>-->
 
 
 </body>
