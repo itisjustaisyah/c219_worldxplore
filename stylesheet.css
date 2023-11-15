@@ -19,7 +19,7 @@
 nav{
     z-index: 2;
     background: skyblue;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     margin: auto;
@@ -29,6 +29,7 @@ nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
 
 
 }
@@ -41,6 +42,7 @@ nav{
     padding: 14px 16px;
     text-decoration: none;
     transition: background-color 100ms ease-out, color 100ms ease-out;
+
 }
 .navbar a:hover {
     background-color: #45aade;
@@ -180,6 +182,7 @@ section {
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
+    flex-direction: row;
 }
 
 .cruise-container-column {
@@ -199,16 +202,11 @@ section {
 }
 
 @media only screen and (max-width: 700px) {
-    *{
+    * {
         font-size: 21px
     }
-    .hamburger {
-        float: right;
-        display: flex;
-    }
-
-    .navbar a:not(.hamburger){
-        display:none;
+    .navbar{
+        flex-direction: column;
     }
 
     #myImage {
@@ -222,7 +220,8 @@ section {
         height: 100%;
         width: 100%
     }
-    #myVideo{
+
+    #myVideo {
         display: none;
     }
 
@@ -237,12 +236,16 @@ section {
         transition: all 0.2s ease-in-out;
     }
 
-    article > div.zig{
+    article > div.zig {
         display: flex;
         flex-direction: column;
     }
-    article > div.zag{
+
+    article > div.zag {
         display: flex;
+        flex-direction: column;
+    }
+    .cruise-container {
         flex-direction: column;
     }
 }
